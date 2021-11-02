@@ -1,10 +1,10 @@
 import React from "react";
 import './app.sass'
-import Auth from "../auth";
+import RegisterError from "../register-error";
 const App = ()=>{
     return(
         <div>
-          <Auth/>
+        <RegisterError/>
         </div>
     )
 }
