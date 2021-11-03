@@ -1,13 +1,11 @@
 import React from "react";
 import './app.sass'
-import ProfileMember from "../profile-member";
-
-
+import AllTestQuestions from "../all-test-questions";
 
 const App = ()=>{
     return(
         <div>
-           <ProfileMember/>
+            <AllTestQuestions/>
         </div>
     )
 }
