@@ -1,12 +1,13 @@
 import React from "react";
 import './app.sass'
-import ProfileCreator from "../profile-creator";
+import ProfileMember from "../profile-member";
+
 
 
 const App = ()=>{
     return(
         <div>
-            <ProfileCreator/>
+           <ProfileMember/>
         </div>
     )
 }
