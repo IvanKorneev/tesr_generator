@@ -1,11 +1,12 @@
 import React from "react";
 import './app.sass'
-import AllTestQuestions from "../all-test-questions";
+import MainPage from "../main-page";
+
 
 const App = ()=>{
     return(
         <div>
-            <AllTestQuestions/>
+           <MainPage/>
         </div>
     )
 }
