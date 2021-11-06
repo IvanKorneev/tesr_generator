@@ -1,13 +1,15 @@
 import React from "react";
 import './main-page.sass'
-const MainPage = ()=>{
-    return(
+import {Link} from "react-router-dom";
+
+const MainPage = () => {
+    return (
         <div className='main-page'>
             <header className="header__section">
                 <div className="profile-link__block">
                     <span className="text">вы не авторизованы</span>
-                    <a href="#">войти</a>
-                    <a href="#">зарегистрироваться</a>
+                    <Link to='/login'>войти</Link>
+                    <Link to='/register'>зарегистрироваться</Link>
                 </div>
                 {/*<div class="profile-link__block">*/}
                 {/*    <span class="text">вы зашли как "Иванов Иван Иванович"</span>*/}
@@ -103,19 +105,19 @@ const MainPage = ()=>{
                         <div className="form-check">
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox"/>
-                                    <span className="text">математика</span>
+                                <span className="text">математика</span>
                             </label>
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox" role="switch"/>
-                                    <span className="text">физика</span>
+                                <span className="text">физика</span>
                             </label>
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox" role="switch"/>
-                                    <span className="text">программирование</span>
+                                <span className="text">программирование</span>
                             </label>
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox" role="switch"/>
-                                    <span className="text">история</span>
+                                <span className="text">история</span>
                             </label>
                         </div>
                     </div>
