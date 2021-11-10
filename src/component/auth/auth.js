@@ -1,18 +1,42 @@
 import React from "react";
 import './auth.sass';
+import {useFormik} from 'formik';
 
-const Auth = () => {
+const Auth = ({setLogin}) => {
+
+
+    const formik = useFormik({
+        initialValues: {
+            email: '',
+            password: ''
+        },
+        onSubmit: values => {
+            setLogin(values,111)
+        }
+    })
     return (
         <div className="auth__block">
             <h1>Авторизация</h1>
-            <form>
+            <form onSubmit={formik.handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="email"/>
+                    <input
+                        type="email"
+                        name='email'
+                        className="form-control"
+                        id="email"
+                        onChange={formik.handleChange}
+                        value={formik.values.email}/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="password" className="form-label">Пароль</label>
-                    <input type="password" className="form-control" id="password"/>
+                    <input type="password"
+                           name='password'
+                           className="form-control"
+                           id="password"
+                           onChange={formik.handleChange}
+                           value={formik.values.password}
+                    />
                 </div>
                 <div className="mb-3 form-check">
                     <input type="checkbox" className="form-check-input" id="rememeber"/>
