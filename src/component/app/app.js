@@ -2,8 +2,8 @@ import React from "react";
 import './app.sass'
 import MainPage from "../main-page";
 import {Routes, Route} from "react-router-dom";
-import Register from "../register";
 import AuthContainer from "../../container-component/auth-container";
+import RegisterContainer from "../../container-component/register-container";
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='login' element={<AuthContainer/>}/>
-                <Route path='register' element={<Register/>}/>
+                <Route path='register' element={<RegisterContainer/>}/>
             </Routes>
         </div>
 

@@ -11,7 +11,7 @@ const Auth = ({setLogin}) => {
             password: ''
         },
         onSubmit: values => {
-            setLogin(values,111)
+            setLogin(values)
         }
     })
     return (
@@ -24,7 +24,6 @@ const Auth = ({setLogin}) => {
                         type="email"
                         name='email'
                         className="form-control"
-                        id="email"
                         onChange={formik.handleChange}
                         value={formik.values.email}/>
                 </div>
@@ -33,7 +32,6 @@ const Auth = ({setLogin}) => {
                     <input type="password"
                            name='password'
                            className="form-control"
-                           id="password"
                            onChange={formik.handleChange}
                            value={formik.values.password}
                     />
