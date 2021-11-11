@@ -1,5 +1,7 @@
 import React from "react";
 import './profile-creator.sass'
+import TableTest from "../table-test";
+import TableCals from "../table-clas";
 
 const ProfileCreator = () => {
     return (
@@ -40,100 +42,8 @@ const ProfileCreator = () => {
                 </div>
             </div>
             <main className="profile-content__section">
-
-                <div class="profile-tests__section">
-                    <div class="test-list__block">
-                        <table class="table table-bordered">
-                            <thead>
-                            <tr>
-                                <th>название</th>
-                                <th>редактировать</th>
-                                <th>удалить</th>
-                                <th>ссылка на тест</th>
-                                <th>пройден</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Тест по математике</td>
-                                <td><a href="#">редактировать</a></td>
-                                <td><a href="#">удалить</a></td>
-                                <td><a href="#">пройти</a></td>
-                                <td>20 раз</td>
-                            </tr>
-                            <tr>
-                                <td>Тест по математике</td>
-                                <td><a href="#">редактировать</a></td>
-                                <td><a href="#">удалить</a></td>
-                                <td><a href="#">пройти</a></td>
-                                <td>20 раз</td>
-                            </tr>
-                            <tr>
-                                <td>Тест по математике</td>
-                                <td><a href="#">редактировать</a></td>
-                                <td><a href="#">удалить</a></td>
-                                <td><a href="#">пройти</a></td>
-                                <td>20 раз</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="test-creating-link__block">
-                        <button type="button" class="btn btn-outline-success">создать тест</button>
-                    </div>
-                </div>
-
-
-                <div class="profile-groups__section">
-                    <div class="group-list__block">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>группа</th>
-                                    <th>список участников</th>
-                                    <th>редактировать</th>
-                                    <th>удалить</th>
-                                    <th>количество</th>
-                                    <th>ссылка на вступление</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>10 "А" класс</td>
-                                    <td><a href="#">посмотреть</a></td>
-                                    <td><a href="#">редактировать</a></td>
-                                    <td><a href="#">удалить</a></td>
-                                    <td>20</td>
-                                    <td><a href="/join-group/efwsfgdfgdfg">ссылка</a></td>
-                                </tr>
-                                <tr>
-                                    <td>10 "B" класс</td>
-                                    <td><a href="#">посмотреть</a></td>
-                                    <td><a href="#">редактировать</a></td>
-                                    <td><a href="#">удалить</a></td>
-                                    <td>20</td>
-                                    <td><a href="/join-group/efwsfgdfgdfg">ссылка</a></td>
-                                </tr>
-                                <tr>
-                                    <td>10 "C" класс</td>
-                                    <td><a href="#">посмотреть</a></td>
-                                    <td><a href="#">редактировать</a></td>
-                                    <td><a href="#">удалить</a></td>
-                                    <td>20</td>
-                                    <td><a href="/join-group/efwsfgdfgdfg">ссылка</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="group-creating__block">
-                        <button type="button" class="btn btn-outline-success">новая группа</button>
-
-
-                        <input type="text" class="group-name form-control" placeholder="введите название группы"/>
-                        <button type="button" class="btn btn-outline-success">создать группу</button>
-                    </div>
-                </div>
-
+                <TableTest/>
+                <TableCals/>
                 <div className="test-creating__section">
                     <div className="new-test-setting__block">
                         <h2>Создание теста</h2>
