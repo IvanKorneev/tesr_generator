@@ -1,6 +1,7 @@
 import React from "react";
 import './main-page.sass'
 import {Link} from "react-router-dom";
+import Pagination from "../pagination";
 
 const MainPage = () => {
     return (
@@ -79,25 +80,7 @@ const MainPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="pagination__block">
-                        <ul className="pagination">
-                            <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li className="page-item"><a className="page-link" href="#">1</a></li>
-                            <li className="page-item active"><a className="page-link" href="#">2</a></li>
-                            <li className="page-item"><a className="page-link" href="#">3</a></li>
-                            <li className="page-item"><a className="page-link" href="#">4</a></li>
-                            <li className="page-item"><a className="page-link" href="#">5</a></li>
-                            <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                   <Pagination/>
                 </main>
                 <aside className="sidebar__section">
                     <div className="select-category__block">
@@ -124,7 +107,6 @@ const MainPage = () => {
                 </aside>
             </div>
             <footer className="footer__section">
-
             </footer>
         </div>
 
